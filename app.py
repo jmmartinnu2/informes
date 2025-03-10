@@ -106,8 +106,8 @@ with col_right:
 
     # 📌 Posición del jugador en el campo
     player_x, player_y = 40, 40
-    ax.scatter(player_x, player_y, s=200, color='red', edgecolors='black', zorder=5)
-    ax.text(player_x, player_y, 'Ismael', color='black', ha='center', va='center', fontsize=10, weight='bold')
+    ax.scatter(player_x, player_y, s=600, color='black', edgecolors='black', zorder=5)
+ 
 
     st.pyplot(fig)
 
