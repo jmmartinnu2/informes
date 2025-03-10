@@ -111,27 +111,7 @@ with col_right:
 
     st.pyplot(fig)
 
-    # 📌 Imágenes del Partido
-    st.markdown("### 📸 Imágenes del Partido")
-
-    # Lista de rutas de imágenes
-    images_paths = [
-        "data/img/data4.jpg",
-        "data/img/data1.jpg",
-        "data/img/data2.jpg",
-        "data/img/data3.jpg",
-    ]
-
-    # Cargar imágenes que existan
-    images = [Image.open(img) for img in images_paths if os.path.exists(img)]
-
-    if images:
-        # Slider para seleccionar la imagen a mostrar
-        image_index = st.slider("Selecciona la imagen a visualizar", 
-                                min_value=0, max_value=len(images)-1, value=0)
-        st.image(images[image_index], use_container_width=True)
-    else:
-        st.write("No se encontraron imágenes en la ruta especificada.")
+    
 
 # 📌 SEPARADOR FINAL
 st.markdown("<hr>", unsafe_allow_html=True)
