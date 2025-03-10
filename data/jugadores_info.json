@@ -1,0 +1,14 @@
+{
+    "Ismael Ruesca Godino": {
+        "informe_partido": {
+            "descripcion": "En un partido clave a nivel grupal, Ismael se destacó con luces propias en un encuentro contra un rival de la zona alta, el Granada CF. Desplegándose en un sistema 3-5-2, desempeñó el rol de pivote defensivo en doble pivote, aportando equilibrio y una solidez que frustró las intenciones ofensivas del rival durante el primer tiempo. Su lectura táctica fue evidente al mantener la línea compacta y ofrecer opciones seguras en los pases cortos, siempre con criterio y sin “quemar” el balón, permitiendo a Atlético Marbella lanzar contragolpes efectivos que culminaron en una ventaja temprana.\n\nHizo 2 desplazamientos rápidos buscando la zona de arriba y con éxito que generó contragolpes rápidos, mientras mantenía un alto ritmo de desgaste físico al estar en el campo durante el 90% del partido, siendo sustituido solo en los últimos 10 minutos. Su capacidad para dar pausa y conectar el juego fue fundamental, convirtiéndose en un eje de contención y orden en la plantilla.\n\nNo obstante, a pesar de ser reconocido por sus compañeros como líder, su liderazgo en el terreno de juego es una faceta que aún debe perfeccionar. En resumen, se trata de un jugador tácticamente inteligente y físicamente incansable, con claras cualidades defensivas y de construcción de juego, que, si potencia su capacidad de liderazgo, podrá alcanzar un rendimiento óptimo en partidos de alta exigencia.",
+            "metricas": [
+                "Recuperaciones de Balón",
+                "Asistencias",
+                "Intercepciones"
+            ],
+            "formacion": "4-3-3",
+            "posicion": "Mediocentro Defensivo"
+        }
+    }
+}
