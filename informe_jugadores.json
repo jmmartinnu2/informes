@@ -1,0 +1,111 @@
+{
+    "informe_jugadores": [
+        {
+            "nombre": "Ismael Ruesca Godino",
+            "equipo": "Atlético Marbella Paraíso",
+            "categoria": "División de Honor Infantil",
+            "valoracion": 4,
+            "video": [
+                "https://youtu.be/46sYpmyH0Gw",
+                "https://youtu.be/D6uTUhOmMmo"
+            ], 
+            "posicion_campo": {
+                "x": 40,
+                "y": 40
+            },
+            "partido": {
+                "rival": "Granada CF",
+                "resultado": {
+                    "Granada_CF": 1,
+                    "Atletico_Marbella_Paraiso": 1
+                }
+            },
+            "informe": {
+                "comentario": "El partido fue una auténtica batalla táctica en el centro del campo. Ismael demostró su inteligencia posicional y capacidad de lectura de juego, anticipándose a las jugadas y siendo el eje sobre el que pivotaron las transiciones ofensivas y defensivas de su equipo.",
+                "actuacion": {
+                    "sistema_juego": "3-5-2",
+                    "rol": "Pivote defensivo en doble pivote",
+                    "desempeno": "Se mostró como un auténtico ancla en la medular, cortando líneas de pase y facilitando la salida limpia del balón.",
+                    "participacion": "Disputó el 90% del partido, siendo sustituido en los últimos 10 minutos para refrescar el centro del campo.",
+                    "liderazgo": "Líder en la sombra. Pese a que sus compañeros lo ven como un líder y así se palpa desde fuerta tiene que mejorar en esa faceta."
+                },
+                "posicionamiento_tactico": {
+                    "formacion": "3-5-2",
+                    "rol": "Se encargó de mantener el equilibrio del equipo, asegurando una transición ordenada entre defensa y ataque."
+                },
+                "aspectos_tecnicos": {
+                    "manejo_balon": "Manejo del balón. Seguridad en la posesión, buen criterio en la toma de decisiones",
+                    "puntos_mejorar": "Debe mejorar la velocidad en la toma de decisiones cuando recibe presión."
+                },
+                "duelo_recuperacion": {
+                    "intervencion_cortes": "Gran efectividad en el robo de balón.",
+                    "observacion": "Se espera más presencia en duelos aéreos. No se apreció en este partido grandes duelos ya que fue un partido de poco balón arriba."
+                },
+                "desempeno_fisico": {
+                    "resistencia": "Mostró un despliegue físico impresionante.",
+                    "velocidad": "Necesita mejorar su aceleración en los primeros metros."
+                },
+                "orden_tactico": {
+                    "tactico": "Aspecto muy destacado en este partido siempre manteniendo su zona y dando equilibrio al equipo",
+                    "concentracion": "Muy destacado también este aspecto donde no bajó la guardia en ninguna fase del partido, siempre estuvo 'metido'."
+                }
+            },
+            "logotipos": {
+                "granada_cf": "https://cdn.resfu.com/img_data/equipos/4235.png?size=120x&lossy=1",
+                "atletico_marbella_paraiso": "https://cdn.resfu.com/img_data/escudos/medium/160991.jpg?size=120x&lossy=1"
+            }
+        },
+        {
+            "nombre": "José Daniel Layon Morito",
+            "equipo": "CD Estepona",
+            "categoria": "3ª Andaluza Cadete Grupo II",
+            "valoracion": 3,
+            "video": "https://youtu.be/MYWt92AlwxM",
+            "posicion_campo": {
+                "x": 90,
+                "y": 70
+            },
+            "partido": {
+                "rival": "UD San Pedro",
+                "resultado": {
+                    "CD_Estepona": 0,
+                    "UD_San_Pedro": 2
+                }
+            },
+            "informe": {
+                "comentario": "Partido complicado para el CD Estepona, que intentó imponer su juego en los primeros minutos. Cuando mejor estaban llegó el primer gol visitante y a partir de ahí el partido cambió totalmente, dejando a un UD San Pedro dominador en todos los aspectos del juego. Un rival claramente superior.",
+                "actuacion": {
+                    "sistema_juego": "4-4-2",
+                    "rol": "Extremo derecho",
+                    "desempeno": "Entró a los 15 minutos y rápidamente se convirtió en un factor desequilibrante.",
+                    "participacion": "Fue protagonista en el primer tiempo con incursiones peligrosas por banda.",
+                    "liderazgo": "Debe trabajar su mentalidad competitiva."
+                },
+                "posicionamiento_tactico": {
+                    "formacion": "4-4-2",
+                    "rol": "Se desempeñó como extremo puro, buscando profundidad y ataque por la banda."
+                },
+                "aspectos_tecnicos": {
+                    "manejo_balon": "Destacó en los duelos individuales con desborde exitoso.",
+                    "puntos_mejorar": "Debe mejorar su lectura táctica y actitud competitiva."
+                },
+                "duelo_recuperacion": {
+                    "intervencion_cortes": "Buen repliegue defensivo en el primer tiempo.",
+                    "observacion": "Debe mejorar su capacidad para aguantar embestidas rivales."
+                },
+                "desempeno_fisico": {
+                    "resistencia": "Se redujo en la segunda mitad, mostrando signos de fatiga.",
+                    "velocidad": "Posee una explosividad destacable, pero necesita mejorar su resistencia a la velocidad."
+                },
+                "orden_tactico": {
+                    "tactico": "Debe presionar con más agresividad y mejorar su lectura táctica.",
+                    "concentracion": "Se desconectó tras el primer gol en contra, perdiendo precisión."
+                }
+            },
+            "logotipos": {
+                "cd_estepona": "https://cdn.resfu.com/img_data/equipos/19064.png?size=120x&lossy=1",
+                "ud_san_pedro": "https://cdn.resfu.com/img_data/equipos/2239.png?size=120x&lossy=1"
+            }
+        }
+    ]
+}
