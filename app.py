@@ -30,11 +30,16 @@ jugador = next(j for j in data["informe_jugadores"] if j["nombre"] == jugador_se
 # Obtener posición en el campo
 pos_x, pos_y = jugador["posicion_campo"]["x"], jugador["posicion_campo"]["y"]
 
-# Crear pestañas (Tabs) para mostrar información
-tab1, tab2 = st.tabs(["📊 Informe", "🎥 Videos"])
+# Verificar si el jugador tiene información de partido2
+if "partido2" in jugador:
+    tabs = st.tabs(["📊 Informe", "⚽ Partido 2", "🎥 Videos"])
+    tab_informe, tab_partido2, tab_videos = tabs
+else:
+    tabs = st.tabs(["📊 Informe", "🎥 Videos"])
+    tab_informe, tab_videos = tabs
 
-# 📊 TAB 1: Informe del Jugador + Posición en el Campo
-with tab1:
+# 📊 TAB: Informe del Jugador + Posición en el Campo
+with tab_informe:
     st.title(f"📊 Informe de {jugador['nombre']}")
     st.subheader(f"{jugador['equipo']} - {jugador['categoria']}")
     st.markdown(f"⭐ **Valoración:** {jugador['valoracion']} / 5")
@@ -50,14 +55,14 @@ with tab1:
         st.markdown(f"**Resultado:** {resultado_texto}")
 
         # Mostrar el informe completo
-        st.markdown("### 📌 Análisis del Desempeño")
+        st.markdown("### 📌 Análisis del Rendimiento")
         st.markdown(f"📝 **Comentario:** {jugador['informe']['comentario']}")
 
         with st.expander("🎯 Actuación en el Partido"):
             actuacion = jugador["informe"]["actuacion"]
             st.markdown(f"- **Sistema de Juego:** {actuacion['sistema_juego']}")
             st.markdown(f"- **Rol:** {actuacion['rol']}")
-            st.markdown(f"- **Desempeño:** {actuacion['desempeno']}")
+            st.markdown(f"- **Rendimiento:** {actuacion['desempeno']}")
             st.markdown(f"- **Participación:** {actuacion['participacion']}")
             st.markdown(f"- **Liderazgo:** {actuacion['liderazgo']}")
 
@@ -76,7 +81,7 @@ with tab1:
             st.markdown(f"- **Intervención y cortes:** {duelos['intervencion_cortes']}")
             st.markdown(f"- **Observación:** {duelos['observacion']}")
 
-        with st.expander("🎯 Desempeño Físico"):
+        with st.expander("🎯 Rendimiento Físico"):
             fisico = jugador["informe"]["desempeno_fisico"]
             st.markdown(f"- **Resistencia:** {fisico['resistencia']}")
             st.markdown(f"- **Velocidad:** {fisico['velocidad']}")
@@ -103,16 +108,58 @@ with tab1:
         # Mostrar el gráfico en Streamlit
         st.pyplot(fig)
 
+# ⚽ TAB: Partido 2 (solo se muestra si existe la información en el JSON)
+if "partido2" in jugador:
+    with tab_partido2:
+        partido2 = jugador["partido2"]
+        st.title(f"⚽ Informe - {partido2.get('fecha', '')}")
+        st.markdown(f"### Rival: {partido2.get('rival', 'Desconocido')}")
+        resultado2 = partido2.get("resultado", {})
+        if resultado2:
+            resultado_texto2 = " - ".join([f"{k.replace('_', ' ')} {v}" for k, v in resultado2.items()])
+            st.markdown(f"**Resultado:** {resultado_texto2}")
+        st.markdown("### 📌 Análisis del Rendimiento - Partido 2")
+        informe2 = partido2.get("informe", {})
+        if informe2:
+            st.markdown(f"📝 **Comentario:** {informe2.get('comentario', '')}")
+            with st.expander("🎯 Actuación en el Partido"):
+                actuacion2 = informe2.get("actuacion", {})
+                st.markdown(f"- **Sistema de Juego:** {actuacion2.get('sistema_juego', '')}")
+                st.markdown(f"- **Rol:** {actuacion2.get('rol', '')}")
+                st.markdown(f"- **Rendimiento:** {actuacion2.get('desempeno', '')}")
+                st.markdown(f"- **Participación:** {actuacion2.get('participacion', '')}")
+                st.markdown(f"- **Liderazgo:** {actuacion2.get('liderazgo', '')}")
+            with st.expander("🎯 Posicionamiento Táctico"):
+                pos_tactico2 = informe2.get("posicionamiento_tactico", {})
+                st.markdown(f"- **Formación:** {pos_tactico2.get('formacion', '')}")
+                st.markdown(f"- **Rol:** {pos_tactico2.get('rol', '')}")
+            with st.expander("🎯 Aspectos Técnicos"):
+                tecnicos2 = informe2.get("aspectos_tecnicos", {})
+                st.markdown(f"- **Manejo de balón:** {tecnicos2.get('manejo_balon', '')}")
+                st.markdown(f"- **Puntos a mejorar:** {tecnicos2.get('puntos_mejorar', '')}")
+            with st.expander("🎯 Duelos y Recuperación"):
+                duelos2 = informe2.get("duelo_recuperacion", {})
+                st.markdown(f"- **Intervención y cortes:** {duelos2.get('intervencion_cortes', '')}")
+                st.markdown(f"- **Observación:** {duelos2.get('observacion', '')}")
+            with st.expander("🎯 Rendimiento Físico"):
+                fisico2 = informe2.get("desempeno_fisico", {})
+                st.markdown(f"- **Resistencia:** {fisico2.get('resistencia', '')}")
+                st.markdown(f"- **Velocidad:** {fisico2.get('velocidad', '')}")
+            with st.expander("🎯 Orden Táctico"):
+                orden2 = informe2.get("orden_tactico", {})
+                st.markdown(f"- **Táctico:** {orden2.get('tactico', '')}")
+                st.markdown(f"- **Concentración:** {orden2.get('concentracion', '')}")
+        else:
+            st.write("⚠️ No hay información detallada del partido 2.")
 
-# 🎥 TAB 2: Sección de Videos
-with tab2:
+# 🎥 TAB: Videos
+with (tab_videos if "partido2" in jugador else tab_videos):
     st.title("🎥 Videos del Jugador")
-
-    # Verificar si hay videos y si es una lista
-    if "video" in jugador and isinstance(jugador["video"], list):
-        for video_url in jugador["video"]:
-            st.video(video_url)  # Mostrar cada video individualmente
+    if "video" in jugador:
+        if isinstance(jugador["video"], list):
+            for video_url in jugador["video"]:
+                st.video(video_url)
+        else:
+            st.video(jugador["video"])
     else:
         st.write("🎬 No hay videos disponibles para este jugador.")
-
-

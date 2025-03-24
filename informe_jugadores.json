@@ -8,7 +8,7 @@
             "video": [
                 "https://youtu.be/46sYpmyH0Gw",
                 "https://youtu.be/D6uTUhOmMmo"
-            ], 
+            ],
             "posicion_campo": {
                 "x": 40,
                 "y": 40
@@ -27,7 +27,7 @@
                     "rol": "Pivote defensivo en doble pivote",
                     "desempeno": "Se mostró como un auténtico ancla en la medular, cortando líneas de pase y facilitando la salida limpia del balón.",
                     "participacion": "Disputó el 90% del partido, siendo sustituido en los últimos 10 minutos para refrescar el centro del campo.",
-                    "liderazgo": "Líder en la sombra. Pese a que sus compañeros lo ven como un líder y así se palpa desde fuerta tiene que mejorar en esa faceta."
+                    "liderazgo": "Líder en la sombra. Pese a que sus compañeros lo ven como un líder y así se palpa desde fuera, tiene que mejorar en esa faceta."
                 },
                 "posicionamiento_tactico": {
                     "formacion": "3-5-2",
@@ -46,8 +46,8 @@
                     "velocidad": "Necesita mejorar su aceleración en los primeros metros."
                 },
                 "orden_tactico": {
-                    "tactico": "Aspecto muy destacado en este partido siempre manteniendo su zona y dando equilibrio al equipo",
-                    "concentracion": "Muy destacado también este aspecto donde no bajó la guardia en ninguna fase del partido, siempre estuvo 'metido'."
+                    "tactico": "Aspecto muy destacado en este partido, siempre manteniendo su zona y dando equilibrio al equipo",
+                    "concentracion": "Muy destacado también este aspecto, donde no bajó la guardia en ninguna fase del partido, siempre estuvo 'metido'."
                 }
             },
             "logotipos": {
@@ -60,7 +60,10 @@
             "equipo": "CD Estepona",
             "categoria": "3ª Andaluza Cadete Grupo II",
             "valoracion": 3,
-            "video": "https://youtu.be/MYWt92AlwxM",
+            "video": [
+                "https://youtu.be/MYWt92AlwxM",
+                "https://www.youtube.com/watch?v=L8jEzb29Du8"
+            ],
             "posicion_campo": {
                 "x": 90,
                 "y": 70
@@ -70,6 +73,46 @@
                 "resultado": {
                     "CD_Estepona": 0,
                     "UD_San_Pedro": 2
+                }
+            },
+            "partido2": {
+                "fecha": "23 Marzo 2025",
+                "rival": "CD Ateltico Marbelli",
+                "resultado": {
+                    "CD_Ateltico_Marbelli": 1,
+                    "CD_Estepona": 8
+                    
+                },
+                "informe": {
+                    "comentario": "En un contundente partido del 23 de marzo de 2025, José Daniel desplegó un doble filo: arrancó con dinamismo y calidad ofensiva, demostrando destellos de genialidad en sus incursiones y pases letales, aunque en los últimos compases se notó una caída en intensidad y decisión.",
+                    "actuacion": {
+                        "sistema_juego": "4-3-3 (variante ofensiva con cambios de banda)",
+                        "rol": "Extremo ofensivo en ambas bandas, por izquierda bucando entradas por dentro a pierna cambiada y por derecha mas puro extremo de llegada a liena de fondo y buscar centros al área.",
+                        "desempeno": "Desde el inicio se notó su velocidad y capacidad para desequilibrar, realizando entradas incisivas y ofreciendo pases de la muerte que generaron gol. No obstante, tras el cambio de banda, su protagonismo se vio ensombrecido por momentos de duda y falta de agresividad en la presión.",
+                        "participacion": "Destacado en la primera mitad con acciones individuales determinantes, pero con una marcada pérdida de eficacia en los últimos 10 minutos.",
+                        "liderazgo": "No se perfiló como líder; se percibió indecisión en situaciones clave."
+                    },
+                    "posicionamiento_tactico": {
+                        "formacion": "4-3-3 adaptado a roles cambiantes",
+                        "rol": "Inició en la banda izquierda, buscando entrar por dentro con pierna cambiada, y luego se reubicó en el extremo derecho para aprovechar su pie natural y generar centros desde la línea de fondo."
+                    },
+                    "aspectos_tecnicos": {
+                        "manejo_balon": "Mostró un excelente control y aceleración en los primeros compases, evidenciado en varias llegadas peligrosas y en su ejecución de pases letales.",
+                        "puntos_mejorar": "Debe trabajar en mantener la presión y la toma de decisiones en momentos de alta tensión, especialmente en la segunda mitad."
+                    },
+                    "duelo_recuperacion": {
+                        "intervencion_cortes": "Realizó recuperaciones clave en transición, generando ocasiones de peligro tras recuperar el balón.",
+                        "observacion": "A pesar de su buena lectura en la salida de balón, se notó titubeo en duelos individuales en momentos críticos."
+                    },
+                    "desempeno_fisico": {
+                        "resistencia": "Su explosividad y aceleración fueron evidentes al inicio, pero la caída de intensidad en la segunda mitad sugiere una falta de constancia, probablemente vinculada a aspectos mentales más que físicos.",
+                        "velocidad": "La velocidad y su capacidad de desborde fueron fundamentales para sus incursiones por banda."
+                    },
+                    "orden_tactico": {
+                        "tactico": "Mostró una buena lectura táctica inicial, adaptándose al cambio de banda y de rol, aunque la falta de determinación en los últimos minutos afectó su rendimiento global.",
+                        "concentracion": "Al inicio mantuvo alta concentración, pero la pérdida de intensidad y la indecisión en la fase final fueron evidentes."
+                    },
+                    "observaciones": "Su capacidad para conectar jugadas mediante internadas por la banda y pases precisos es un punto a favor, evidenciando un gran potencial ofensivo. No obstante, la inconsistencia en la presión y la tendencia a 'bracear' en momentos cruciales indican áreas claras de mejora en su fortaleza mental y toma de decisiones bajo presión."
                 }
             },
             "informe": {
