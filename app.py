@@ -179,7 +179,7 @@ if jugador["nombre"] == "Ismael Ruesca Godino" and jugador.get("partido2"):
                 st.write("Calificación:", ismael_rating)
                 
         with col2:
-            st.markdown("### ⚽ Posición en el Campo - Partido 2")
+            st.markdown("### ⚽ Posiciones en el campo de Ismael")
             fig_pitch, ax_pitch = plt.subplots(figsize=(10, 9))
             pitch2 = Pitch(pitch_type='statsbomb', pitch_color='grass', line_color='white')
             pitch2.draw(ax=ax_pitch)
