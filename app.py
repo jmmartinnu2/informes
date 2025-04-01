@@ -34,7 +34,7 @@ pos_x, pos_y = jugador["posicion_campo"]["x"], jugador["posicion_campo"]["y"]
 if jugador["nombre"] == "Ismael Ruesca Godino":
     if jugador.get("partido2"):
         # Se eliminó el tab "⚽ Próximo partido"
-        tabs = st.tabs(["📊 Partido1", "📝 Partido2", "🎥 Videos"])
+        tabs = st.tabs(["📊 Granada CF vs Atl. Marbella Paraíso", "📝 Atl. Marbella Paraíso vs Real Betis", "🎥 Videos"])
         tab_informe, tab_detallado, tab_videos = tabs
     else:
         tabs = st.tabs(["📊 Partido1", "📝 Partido2", "🎥 Videos"])
