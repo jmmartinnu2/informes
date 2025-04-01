@@ -33,8 +33,9 @@ pos_x, pos_y = jugador["posicion_campo"]["x"], jugador["posicion_campo"]["y"]
 # Definir los tabs según el jugador y si existe partido2 (usando .get para mayor seguridad)
 if jugador["nombre"] == "Ismael Ruesca Godino":
     if jugador.get("partido2"):
-        tabs = st.tabs(["📊 Partido1", "📝 Partido2", "⚽ Partido 2", "🎥 Videos"])
-        tab_informe, tab_detallado, tab_partido2, tab_videos = tabs
+        # Se eliminó el tab "⚽ Próximo partido"
+        tabs = st.tabs(["📊 Partido1", "📝 Partido2", "🎥 Videos"])
+        tab_informe, tab_detallado, tab_videos = tabs
     else:
         tabs = st.tabs(["📊 Partido1", "📝 Partido2", "🎥 Videos"])
         tab_informe, tab_detallado, tab_videos = tabs
@@ -53,21 +54,19 @@ with tab_informe:
     # Cabecera con dos columnas: izquierda para la información, derecha para los logotipos
     header_left, header_right = st.columns([3, 1])
     with header_left:
-        st.title(f"📊 Informe de partido")
+        st.title(f"📊 Informe de {jugador['nombre']}")
         st.subheader(f"{jugador['equipo']} - {jugador['categoria']}")
         st.markdown(f"⭐⭐⭐⭐ **Valoración:** {jugador['valoracion']} / 5")
     with header_right:
-        # Ajusta la clave según tu JSON
-        logo_granada = jugador["logotipos"].get("granada_cf")  # Cambia "Granada cf" si es necesario
+        # Ajusta la clave según tu JSON: aquí se usa "granada_cf" en minúsculas si es la clave correcta,
+        # o la que corresponda; por ejemplo, en el JSON de Ismael se usa "Granadacf"
+        logo_granada = jugador["logotipos"].get("Granadacf")
         logo_atletico = jugador["logotipos"].get("atletico_marbella_paraiso")
         if logo_granada:
-            st.image(logo_granada, )
+            st.image(logo_granada, width=120)
         if logo_atletico:
             st.image(logo_atletico, width=120)
-
     st.markdown("---")
-
-
     
     # Crear dos columnas: la izquierda para la información y la derecha para el pitch
     col1, col2 = st.columns([2, 1])
@@ -114,7 +113,6 @@ with tab_informe:
                 st.markdown(f"- **Concentración:** {tactico_ord['concentracion']}")
             else:
                 st.markdown("⚠️ No hay información sobre el orden táctico.")
-                
     with col2:
         st.markdown("### ⚽ Posición en el Campo")
         fig, ax = plt.subplots(figsize=(8, 7))
@@ -124,9 +122,6 @@ with tab_informe:
         ax.scatter(pos_x, pos_y, color="black", s=600, label=jugador["nombre"])
         ax.text(pos_x, pos_y + 3, jugador["nombre"], fontsize=12, ha="center", color="white")
         st.pyplot(fig)
-
-
-
 
 # ------------------------------
 # TAB: Informe Detallado para Ismael Ruesca Godino (Partido2)
@@ -142,14 +137,12 @@ if jugador["nombre"] == "Ismael Ruesca Godino" and jugador.get("partido2"):
             st.markdown(f"⭐⭐⭐⭐ **Valoración:** {p2_info['valoracion']}")
             st.markdown(f"**Resultado del Partido:** {p2_info['resultado_partido']}")
         with header_col2:
-            st.image(jugador["logotipos"]["atletico_marbella_paraiso"], width=120)
-            st.image(jugador["logotipos"]["Betis"], width=120)
-
+            st.image(jugador["logotipos"].get("atletico_marbella_paraiso"), width=120)
+            st.image(jugador["logotipos"].get("Betis"), width=120)
         st.markdown("---")
         
         # Layout principal en dos columnas
         col1, col2 = st.columns(2)
-        
         with col1:
             with st.expander("🎯 Contexto Táctico y Posicionamiento"):
                 contexto = p2_info["contexto_tactico_y_posicionamiento"]
@@ -196,10 +189,8 @@ if jugador["nombre"] == "Ismael Ruesca Godino" and jugador.get("partido2"):
             ax_pitch.legend(loc="upper right", fontsize=12)
             st.pyplot(fig_pitch)
 
-
-
 # ------------------------------
-# TAB: Partido 2 para otros jugadores (si no es Ismael Ruesca Godino)
+# TAB: Informe Detallado para otros jugadores (si no es Ismael Ruesca Godino)
 # ------------------------------
 if jugador.get("partido2") and jugador["nombre"] != "Ismael Ruesca Godino":
     with tab_partido2:
