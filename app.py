@@ -30,19 +30,25 @@ jugador = next(j for j in data["informe_jugadores"] if j["nombre"] == jugador_se
 # Obtener posición en el campo (para el tab Informe)
 pos_x, pos_y = jugador["posicion_campo"]["x"], jugador["posicion_campo"]["y"]
 
-# Definir los tabs según el jugador y si existe partido2 (usando .get para mayor seguridad)
+# Definir los tabs según el jugador y la existencia de partidos adicionales
 if jugador["nombre"] == "Ismael Ruesca Godino":
     if jugador.get("partido2"):
-        # Se eliminó el tab "⚽ Próximo partido"
         tabs = st.tabs(["📊 Granada CF vs Atl. Marbella Paraíso", "📝 Atl. Marbella Paraíso vs Real Betis", "🎥 Videos"])
         tab_informe, tab_detallado, tab_videos = tabs
     else:
         tabs = st.tabs(["📊 Partido1", "📝 Partido2", "🎥 Videos"])
         tab_informe, tab_detallado, tab_videos = tabs
 else:
-    if jugador.get("partido2"):
+    # Para jugadores distintos a Ismael, se evalúa la existencia de partido2 y partido3
+    if jugador.get("partido2") and jugador.get("partido3"):
+        tabs = st.tabs(["📊 Informe", "⚽ Partido 2", "⚽ Partido 3", "🎥 Videos"])
+        tab_informe, tab_partido2, tab_partido3, tab_videos = tabs
+    elif jugador.get("partido2"):
         tabs = st.tabs(["📊 Informe", "⚽ Partido 2", "🎥 Videos"])
         tab_informe, tab_partido2, tab_videos = tabs
+    elif jugador.get("partido3"):
+        tabs = st.tabs(["📊 Informe", "⚽ Partido 3", "🎥 Videos"])
+        tab_informe, tab_partido3, tab_videos = tabs
     else:
         tabs = st.tabs(["📊 Informe", "🎥 Videos"])
         tab_informe, tab_videos = tabs
@@ -56,10 +62,9 @@ with tab_informe:
     with header_left:
         st.title(f"📊 Informe de {jugador['nombre']}")
         st.subheader(f"{jugador['equipo']} - {jugador['categoria']}")
-        st.markdown(f"⭐⭐⭐⭐ **Valoración:** {jugador['valoracion']} / 5")
+        st.markdown(f"**Valoración:** ⭐⭐⭐")
     with header_right:
-        # Ajusta la clave según tu JSON: aquí se usa "granada_cf" en minúsculas si es la clave correcta,
-        # o la que corresponda; por ejemplo, en el JSON de Ismael se usa "Granadacf"
+        # Se intenta obtener los logos; si no se encuentran, no se muestran
         logo_granada = jugador["logotipos"].get("Granadacf")
         logo_atletico = jugador["logotipos"].get("atletico_marbella_paraiso")
         if logo_granada:
@@ -118,7 +123,6 @@ with tab_informe:
         fig, ax = plt.subplots(figsize=(8, 7))
         pitch = Pitch(pitch_type='statsbomb', pitch_color='grass', line_color='white')
         pitch.draw(ax=ax)
-        # Marcar la posición original del jugador (usada en el informe general)
         ax.scatter(pos_x, pos_y, color="black", s=600, label=jugador["nombre"])
         ax.text(pos_x, pos_y + 3, jugador["nombre"], fontsize=12, ha="center", color="white")
         st.pyplot(fig)
@@ -129,19 +133,17 @@ with tab_informe:
 if jugador["nombre"] == "Ismael Ruesca Godino" and jugador.get("partido2"):
     with tab_detallado:
         p2_info = jugador["partido2"]["informe_detallado"]
-        # Cabecera en dos columnas: izquierda para la información, derecha para los logotipos
         header_col1, header_col2 = st.columns([3, 1])
         with header_col1:
             st.title(p2_info["titulo"])
             st.subheader(p2_info["partido"])
-            st.markdown(f"⭐⭐⭐⭐ **Valoración:** {p2_info['valoracion']}")
+            st.markdown(f"**Valoración:** ⭐⭐⭐⭐")
             st.markdown(f"**Resultado del Partido:** {p2_info['resultado_partido']}")
         with header_col2:
             st.image(jugador["logotipos"].get("atletico_marbella_paraiso"), width=120)
             st.image(jugador["logotipos"].get("Betis"), width=120)
         st.markdown("---")
         
-        # Layout principal en dos columnas
         col1, col2 = st.columns(2)
         with col1:
             with st.expander("🎯 Contexto Táctico y Posicionamiento"):
@@ -183,7 +185,6 @@ if jugador["nombre"] == "Ismael Ruesca Godino" and jugador.get("partido2"):
             fig_pitch, ax_pitch = plt.subplots(figsize=(10, 9))
             pitch2 = Pitch(pitch_type='statsbomb', pitch_color='grass', line_color='white')
             pitch2.draw(ax=ax_pitch)
-            # Marcar dos posiciones: ajustar las coordenadas según sea necesario
             ax_pitch.scatter(20, 40, color="black", s=600, label="Defensa Central")
             ax_pitch.scatter(40, 40, color="blue", s=600, label="Mediocentro Defensivo")
             ax_pitch.legend(loc="upper right", fontsize=12)
@@ -197,13 +198,13 @@ if jugador.get("partido2") and jugador["nombre"] != "Ismael Ruesca Godino":
         partido2 = jugador["partido2"]
         st.title(f"⚽ Informe - {partido2.get('fecha', '')}")
         st.markdown(f"### Rival: {partido2.get('rival', 'Desconocido')}")
+        st.markdown(f"**Valoración:** ⭐⭐⭐ ")
         resultado2 = partido2.get("resultado", {})
         if resultado2:
             resultado_texto2 = " - ".join([f"{k.replace('_', ' ')} {v}" for k, v in resultado2.items()])
             st.markdown(f"**Resultado:** {resultado_texto2}")
         st.markdown("### 📌 Análisis del Rendimiento - Partido 2")
         
-        # Crear dos columnas: izquierda para el texto, derecha para el campo
         col1, col2 = st.columns([2, 1])
         with col1:
             informe2 = partido2.get("informe", {})
@@ -249,6 +250,68 @@ if jugador.get("partido2") and jugador["nombre"] != "Ismael Ruesca Godino":
             ax2.scatter(*pos_extremo_derecho, color="blue", s=200, label="Extremo Derecho")
             ax2.legend(loc="upper left", fontsize="small")
             st.pyplot(fig2)
+
+# ------------------------------
+# TAB: Informe Detallado - Partido 3 (para José Daniel Layon Morito)
+# ------------------------------
+if jugador.get("partido3"):
+    with tab_partido3:
+        p3 = jugador["partido3"]
+        st.title("⚽ Informe - Marbella CF vs Estepona")
+        resultado3 = p3["resultado"]
+        resultado_texto3 = " - ".join([f"{k.replace('_', ' ')} {v}" for k, v in resultado3.items()])
+        st.markdown(f"**Resultado:** {resultado_texto3}")
+        st.markdown(f"**Valoración:** ⭐⭐⭐⭐  ")
+        st.markdown("### 📌 Análisis del Rendimiento ")
+        
+        # Crear dos columnas para dividir el informe y la visualización en el campo
+        col1, col2 = st.columns([2, 1])
+        with col1:
+            informe3 = p3["informe"]
+            st.markdown(f"📝 **Comentario:** {informe3['comentario']}")
+            
+            with st.expander("🎯 Actuación en el Partido"):
+                act3 = informe3["actuacion"]
+                st.markdown(f"- **Sistema de Juego:** {act3['sistema_juego']}")
+                st.markdown(f"- **Rol:** {act3['rol']}")
+                st.markdown(f"- **Rendimiento:** {act3['desempeno']}")
+                st.markdown(f"- **Participación:** {act3['participacion']}")
+                st.markdown(f"- **Liderazgo:** {act3['liderazgo']}")
+            
+            with st.expander("🎯 Posicionamiento Táctico"):
+                pos3 = informe3["posicionamiento_tactico"]
+                st.markdown(f"- **Formación:** {pos3['formacion']}")
+                st.markdown(f"- **Rol:** {pos3['rol']}")
+            
+            with st.expander("🎯 Aspectos Técnicos"):
+                tec3 = informe3["aspectos_tecnicos"]
+                st.markdown(f"- **Manejo de balón:** {tec3['manejo_balon']}")
+                st.markdown(f"- **Puntos a mejorar:** {tec3['puntos_mejorar']}")
+            
+            with st.expander("🎯 Duelos y Recuperación"):
+                duel3 = informe3["duelo_recuperacion"]
+                st.markdown(f"- **Observación:** {duel3['observacion']}")
+            
+            with st.expander("🎯 Detalles Adicionales"):
+                det3 = informe3["detalles_adicionales"]
+                st.markdown(f"- **Entrada y Sustitución:** {det3['entrada_sustitucion']}")
+                st.markdown(f"- **Acciones Destacadas:** {det3['acciones_destacadas']}")
+            
+            # Agregar el bloque de feedback con calificación inicial de 4 estrellas
+            with st.expander("⭐ Calificar la actuación"):
+                feedback = st.slider("Califica la actuación (0 a 5 estrellas):", 0, 5, 4, key="feedback_partido3")
+                st.write("Calificación:", feedback)
+                
+        with col2:
+            st.markdown("### ⚽ Posición en el Campo - Partido 3")
+            fig3, ax3 = plt.subplots(figsize=(4, 3))
+            pitch3 = Pitch(pitch_type='statsbomb', pitch_color='grass', line_color='white')
+            pitch3.draw(ax=ax3)
+            # Se muestra solo la posición única de "Extremo Derecho"
+            pos_extremo_derecho = (85, 70)
+            ax3.scatter(*pos_extremo_derecho, color="blue", s=200, label="Extremo Derecho")
+            ax3.legend(loc="upper left", fontsize="small")
+            st.pyplot(fig3)
 
 # ------------------------------
 # TAB: Videos

@@ -1,206 +1,240 @@
 {
-    "informe_jugadores": [
-      {
-        "nombre": "Ismael Ruesca Godino",
-        "equipo": "Atlético Marbella Paraíso",
-        "categoria": "División de Honor Infantil",
-        "valoracion": 4,
-        "video": [
-            "https://youtu.be/4298-i9oUz0",
-            "https://youtu.be/46sYpmyH0Gw",
-            "https://youtu.be/D6uTUhOmMmo"
-
-          ],
-        "posicion_campo": {
-          "x": 40,
-          "y": 40
+  "informe_jugadores": [
+    {
+      "nombre": "Ismael Ruesca Godino",
+      "equipo": "Atlético Marbella Paraíso",
+      "categoria": "División de Honor Infantil",
+      "valoracion": 4,
+      "video": [
+        "https://youtu.be/4298-i9oUz0",
+        "https://youtu.be/46sYpmyH0Gw",
+        "https://youtu.be/D6uTUhOmMmo"
+      ],
+      "posicion_campo": {
+        "x": 40,
+        "y": 40
+      },
+      "partido": {
+        "rival": "Granada CF",
+        "resultado": {
+          "Granada_CF": 1,
+          "Atletico_Marbella_Paraiso": 1
+        }
+      },
+      "informe": {
+        "comentario": "El partido fue una auténtica batalla táctica en el centro del campo. Ismael demostró su inteligencia posicional y capacidad de lectura de juego, anticipándose a las jugadas y siendo el eje sobre el que pivotaron las transiciones ofensivas y defensivas de su equipo.",
+        "actuacion": {
+          "sistema_juego": "3-5-2",
+          "rol": "Pivote defensivo en doble pivote",
+          "desempeno": "Se mostró como un auténtico ancla en la medular, cortando líneas de pase y facilitando la salida limpia del balón.",
+          "participacion": "Disputó el 90% del partido, siendo sustituido en los últimos 10 minutos para refrescar el centro del campo.",
+          "liderazgo": "Líder en la sombra. Pese a que sus compañeros lo ven como un líder y así se palpa desde fuera, tiene que mejorar en esa faceta."
         },
-        "partido": {
-          "rival": "Granada CF",
-          "resultado": {
-            "Granada_CF": 1,
-            "Atletico_Marbella_Paraiso": 1
-          }
+        "posicionamiento_tactico": {
+          "formacion": "3-5-2",
+          "rol": "Se encargó de mantener el equilibrio del equipo, asegurando una transición ordenada entre defensa y ataque."
         },
-        "informe": {
-          "comentario": "El partido fue una auténtica batalla táctica en el centro del campo. Ismael demostró su inteligencia posicional y capacidad de lectura de juego, anticipándose a las jugadas y siendo el eje sobre el que pivotaron las transiciones ofensivas y defensivas de su equipo.",
-          "actuacion": {
-            "sistema_juego": "3-5-2",
-            "rol": "Pivote defensivo en doble pivote",
-            "desempeno": "Se mostró como un auténtico ancla en la medular, cortando líneas de pase y facilitando la salida limpia del balón.",
-            "participacion": "Disputó el 90% del partido, siendo sustituido en los últimos 10 minutos para refrescar el centro del campo.",
-            "liderazgo": "Líder en la sombra. Pese a que sus compañeros lo ven como un líder y así se palpa desde fuera, tiene que mejorar en esa faceta."
-          },
-          "posicionamiento_tactico": {
-            "formacion": "3-5-2",
-            "rol": "Se encargó de mantener el equilibrio del equipo, asegurando una transición ordenada entre defensa y ataque."
-          },
-          "aspectos_tecnicos": {
-            "manejo_balon": "Manejo del balón. Seguridad en la posesión, buen criterio en la toma de decisiones.",
-            "puntos_mejorar": "Debe mejorar la velocidad en la toma de decisiones cuando recibe presión."
-          },
-          "duelo_recuperacion": {
-            "intervencion_cortes": "Gran efectividad en el robo de balón.",
-            "observacion": "Se espera más presencia en duelos aéreos. No se apreció en este partido grandes duelos ya que fue un partido de poco balón arriba."
-          },
-          "desempeno_fisico": {
-            "resistencia": "Mostró un despliegue físico impresionante.",
-            "velocidad": "Necesita mejorar su aceleración en los primeros metros."
-          },
-          "orden_tactico": {
-            "tactico": "Aspecto muy destacado en este partido, siempre manteniendo su zona y dando equilibrio al equipo.",
-            "concentracion": "Muy destacado también este aspecto, donde no bajó la guardia en ninguna fase del partido, siempre estuvo 'metido'."
-          },
-          "logotipos": {
-            "granada_cf": "https://cdn.resfu.com/img_data/equipos/4235.png?size=120x&lossy=1" ,
-            "atletico_marbella_paraiso": "https://cdn.resfu.com/img_data/escudos/medium/160991.jpg?size=120x&lossy=1"
-          }
+        "aspectos_tecnicos": {
+          "manejo_balon": "Manejo del balón. Seguridad en la posesión, buen criterio en la toma de decisiones.",
+          "puntos_mejorar": "Debe mejorar la velocidad en la toma de decisiones cuando recibe presión."
         },
-        "partido2": {
-          "fecha": "30 Marzo 2025",
-          "rival": "Real Betis",
-          "resultado": {
-            "Granada_CF": 1,
-            "Betis_CF": 2
-          },
-          "informe_detallado": {
-            "titulo": "📝 Informe de partido",
-            "partido": "Atlético Marbella Paraíso vs Real Betis",
-            "valoracion": "4 / 5",
-            "resultado_partido": "Atl. Marbella Paraíso  1 - Betis CF 2",
-            "contexto_tactico_y_posicionamiento": {
-              "sistema_de_juego": "El equipo inició el encuentro con un 5-3-2, estructurando una línea defensiva basada en tres centrales. Ismael ocupó la posición central de la defensa, actuando como pilar en la organización táctica y manteniendo las líneas compactas y coordinadas en los primeros compases del partido.",
-              "cambio_de_rol": "En el minuto 35 del primer tiempo, se le asignó la función de mediocentro defensivo para reforzar el equilibrio entre defensa y medio campo, aunque su aportación ofensiva en esa posición fue limitada."
-            },
-            "aspectos_tecnicos_y_detalles_individuales": {
-              "inicios_con_intensidad": "Desde los primeros minutos, Ismael mostró gran intensidad. Destacó por ejecutar dos salidas de balón de alta calidad en situaciones de presión, combinando regate y ejecución precisa, lo que evidencia una técnica refinada.",
-              "velocidad_y_carrera": "Realizó dos carreras largas en apoyo al delantero, ganando duelos de velocidad y cortando el balón en carrera, incluso a espaldas del rival, demostrando dinamismo y compromiso en las transiciones.",
-              "organizacion_y_posicionamiento": "Se mantuvo muy atento a su posición durante todo el encuentro, aportando un rigor táctico clave para mantener la estabilidad del bloque defensivo."
-            },
-            "contribucion_ofensiva_y_areas_de_mejora": {
-              "aporte_ofensivo_limitado": "Aunque participa en salidas desde la defensa y maneja bien el balón, su llegada al área es poco recurrente. Al subir a rematar, su labor ofensiva no es determinante para crear peligro.",
-              "duelo_aereo_y_lectura_de_juego": "En los duelos aéreos se observan carencias, ya que en ocasiones llega tarde a la acción. Mejorar su anticipación en estos momentos podría aumentar su efectividad.",
-              "liderazgo_e_intensidad": "A pesar de un rendimiento sólido, se nota la necesidad de potenciar su liderazgo y aumentar la intensidad en los enfrentamientos críticos."
-            },
-            "desarrollo_del_partido_y_contribucion": {
-              "evolucion_segundo_tiempo": "Tras cambiar de función en el primer tiempo, al inicio del segundo se reincorporó a la defensa central en un momento crucial, contribuyendo a mantener la organización a pesar de la presión rival.",
-              "sustitucion_y_gestion_ritmo": "Fue sustituido faltando 10 minutos para el final, lo que refleja una gestión responsable del ritmo del partido y una buena capacidad de concentración durante todo el encuentro."
-            },
-            "conclusiones_y_recomendaciones": {
-              "fortalezas": [
-                "Técnica depurada en el manejo del balón y ejecución de salidas en presión.",
-                "Rapidez y dinamismo en carreras y duelos.",
-                "Rigor táctico y correcto posicionamiento en la defensa."
-              ],
-              "areas_de_mejora": [
-                "Incrementar la participación ofensiva y la generación de peligro en jugadas a balón parado.",
-                "Mejorar la anticipación en duelos aéreos.",
-                "Potenciar el liderazgo y la intensidad en momentos críticos."
-              ],
-              "resumen": "El partido demostró que Ismael Ruesca Godino posee gran calidad técnica y solidez defensiva, aportando dinamismo y organización. Sin embargo, se recomienda trabajar en su capacidad ofensiva y liderazgo para consolidarse como un jugador integral y decisivo en el equipo."
-            }
-          },
-          "video": "https://youtube.com/shorts/rN6Isayo0BY"
+        "duelo_recuperacion": {
+          "intervencion_cortes": "Gran efectividad en el robo de balón.",
+          "observacion": "Se espera más presencia en duelos aéreos. No se apreció en este partido grandes duelos ya que fue un partido de poco balón arriba."
+        },
+        "desempeno_fisico": {
+          "resistencia": "Mostró un despliegue físico impresionante.",
+          "velocidad": "Necesita mejorar su aceleración en los primeros metros."
+        },
+        "orden_tactico": {
+          "tactico": "Aspecto muy destacado en este partido, siempre manteniendo su zona y dando equilibrio al equipo.",
+          "concentracion": "Muy destacado también este aspecto, donde no bajó la guardia en ninguna fase del partido, siempre estuvo 'metido'."
         },
         "logotipos": {
-          "Betis": "https://cdn.resfu.com/img_data/equipos/486.png?size=120x&lossy=1",
+          "granada_cf": "https://cdn.resfu.com/img_data/equipos/4235.png?size=120x&lossy=1",
           "atletico_marbella_paraiso": "https://cdn.resfu.com/img_data/escudos/medium/160991.jpg?size=120x&lossy=1"
         }
       },
-      {
-        "nombre": "José Daniel Layon Morito",
-        "equipo": "CD Estepona",
-        "categoria": "3ª Andaluza Cadete Grupo II",
-        "valoracion": 3,
-        "video": [
-          "https://youtu.be/MYWt92AlwxM",
-          "https://www.youtube.com/watch?v=L8jEzb29Du8"
-        ],
-        "posicion_campo": {
-          "x": 90,
-          "y": 70
+      "partido2": {
+        "fecha": "30 Marzo 2025",
+        "rival": "Real Betis",
+        "resultado": {
+          "Granada_CF": 1,
+          "Betis_CF": 2
         },
-        "partido": {
-          "rival": "UD San Pedro",
-          "resultado": {
-            "CD_Estepona": 0,
-            "UD_San_Pedro": 2
-          }
-        },
-        "partido2": {
-          "fecha": "23 Marzo 2025",
-          "rival": "CD Ateltico Marbelli",
-          "resultado": {
-            "CD_Ateltico_Marbelli": 1,
-            "CD_Estepona": 8
+        "informe_detallado": {
+          "titulo": "📝 Informe de partido",
+          "partido": "Atlético Marbella Paraíso vs Real Betis",
+          "valoracion": "4 / 5",
+          "resultado_partido": "Atl. Marbella Paraíso  1 - Betis CF 2",
+          "contexto_tactico_y_posicionamiento": {
+            "sistema_de_juego": "El equipo inició el encuentro con un 5-3-2, estructurando una línea defensiva basada en tres centrales. Ismael ocupó la posición central de la defensa, actuando como pilar en la organización táctica y manteniendo las líneas compactas y coordinadas en los primeros compases del partido.",
+            "cambio_de_rol": "En el minuto 35 del primer tiempo, se le asignó la función de mediocentro defensivo para reforzar el equilibrio entre defensa y medio campo, aunque su aportación ofensiva en esa posición fue limitada."
           },
-          "informe": {
-            "comentario": "En un contundente partido del 23 de marzo de 2025, José Daniel desplegó un doble filo: arrancó con dinamismo y calidad ofensiva, demostrando destellos de genialidad en sus incursiones y pases letales, aunque en los últimos compases se notó una caída en intensidad y decisión.",
-            "actuacion": {
-              "sistema_juego": "4-3-3 (variante ofensiva con cambios de banda)",
-              "rol": "Extremo ofensivo en ambas bandas, por izquierda buscando entradas por dentro a pierna cambiada y por derecha, más puro extremo de llegada a línea de fondo y buscar centros al área.",
-              "desempeno": "Desde el inicio se notó su velocidad y capacidad para desequilibrar, realizando entradas incisivas y ofreciendo pases de la muerte que generaron gol. No obstante, tras el cambio de banda, su protagonismo se vio ensombrecido por momentos de duda y falta de agresividad en la presión.",
-              "participacion": "Destacado en la primera mitad con acciones individuales determinantes, pero con una marcada pérdida de eficacia en los últimos 10 minutos.",
-              "liderazgo": "No se perfiló como líder; se percibió indecisión en situaciones clave."
-            },
-            "posicionamiento_tactico": {
-              "formacion": "4-3-3 adaptado a roles cambiantes",
-              "rol": "Inició en la banda izquierda, buscando entrar por dentro con pierna cambiada, y luego se reubicó en el extremo derecho para aprovechar su pie natural y generar centros desde la línea de fondo."
-            },
-            "aspectos_tecnicos": {
-              "manejo_balon": "Mostró un excelente control y aceleración en los primeros compases, evidenciado en varias llegadas peligrosas y en su ejecución de pases letales.",
-              "puntos_mejorar": "Debe trabajar en mantener la presión y la toma de decisiones en momentos de alta tensión, especialmente en la segunda mitad."
-            },
-            "duelo_recuperacion": {
-              "intervencion_cortes": "Realizó recuperaciones clave en transición, generando ocasiones de peligro tras recuperar el balón.",
-              "observacion": "A pesar de su buena lectura en la salida de balón, se notó titubeo en duelos individuales en momentos críticos."
-            },
-            "desempeno_fisico": {
-              "resistencia": "Su explosividad y aceleración fueron evidentes al inicio, pero la caída de intensidad en la segunda mitad sugiere una falta de constancia, probablemente vinculada a aspectos mentales más que físicos.",
-              "velocidad": "La velocidad y su capacidad de desborde fueron fundamentales para sus incursiones por banda."
-            },
-            "orden_tactico": {
-              "tactico": "Mostró una buena lectura táctica inicial, adaptándose al cambio de banda y de rol, aunque la falta de determinación en los últimos minutos afectó su rendimiento global.",
-              "concentracion": "Al inicio mantuvo alta concentración, pero la pérdida de intensidad y la indecisión en la fase final fueron evidentes."
-            },
-            "observaciones": "Su capacidad para conectar jugadas mediante internadas por la banda y pases precisos es un punto a favor, evidenciando un gran potencial ofensivo. No obstante, la inconsistencia en la presión y la tendencia a 'bracear' en momentos cruciales indican áreas claras de mejora en su fortaleza mental y toma de decisiones bajo presión."
+          "aspectos_tecnicos_y_detalles_individuales": {
+            "inicios_con_intensidad": "Desde los primeros minutos, Ismael mostró gran intensidad. Destacó por ejecutar dos salidas de balón de alta calidad en situaciones de presión, combinando regate y ejecución precisa, lo que evidencia una técnica refinada.",
+            "velocidad_y_carrera": "Realizó dos carreras largas en apoyo al delantero, ganando duelos de velocidad y cortando el balón en carrera, incluso a espaldas del rival, demostrando dinamismo y compromiso en las transiciones.",
+            "organizacion_y_posicionamiento": "Se mantuvo muy atento a su posición durante todo el encuentro, aportando un rigor táctico clave para mantener la estabilidad del bloque defensivo."
+          },
+          "contribucion_ofensiva_y_areas_de_mejora": {
+            "aporte_ofensivo_limitado": "Aunque participa en salidas desde la defensa y maneja bien el balón, su llegada al área es poco recurrente. Al subir a rematar, su labor ofensiva no es determinante para crear peligro.",
+            "duelo_aereo_y_lectura_de_juego": "En los duelos aéreos se observan carencias, ya que en ocasiones llega tarde a la acción. Mejorar su anticipación en estos momentos podría aumentar su efectividad.",
+            "liderazgo_e_intensidad": "A pesar de un rendimiento sólido, se nota la necesidad de potenciar su liderazgo y aumentar la intensidad en los enfrentamientos críticos."
+          },
+          "desarrollo_del_partido_y_contribucion": {
+            "evolucion_segundo_tiempo": "Tras cambiar de función en el primer tiempo, al inicio del segundo se reincorporó a la defensa central en un momento crucial, contribuyendo a mantener la organización a pesar de la presión rival.",
+            "sustitucion_y_gestion_ritmo": "Fue sustituido faltando 10 minutos para el final, lo que refleja una gestión responsable del ritmo del partido y una buena capacidad de concentración durante todo el encuentro."
+          },
+          "conclusiones_y_recomendaciones": {
+            "fortalezas": [
+              "Técnica depurada en el manejo del balón y ejecución de salidas en presión.",
+              "Rapidez y dinamismo en carreras y duelos.",
+              "Rigor táctico y correcto posicionamiento en la defensa."
+            ],
+            "areas_de_mejora": [
+              "Incrementar la participación ofensiva y la generación de peligro en jugadas a balón parado.",
+              "Mejorar la anticipación en duelos aéreos.",
+              "Potenciar el liderazgo y la intensidad en momentos críticos."
+            ],
+            "resumen": "El partido demostró que Ismael Ruesca Godino posee gran calidad técnica y solidez defensiva, aportando dinamismo y organización. Sin embargo, se recomienda trabajar en su capacidad ofensiva y liderazgo para consolidarse como un jugador integral y decisivo en el equipo."
           }
+        },
+        "video": "https://youtube.com/shorts/rN6Isayo0BY"
+      },
+      "logotipos": {
+        "Betis": "https://cdn.resfu.com/img_data/equipos/486.png?size=120x&lossy=1",
+        "atletico_marbella_paraiso": "https://cdn.resfu.com/img_data/escudos/medium/160991.jpg?size=120x&lossy=1"
+      }
+    },
+    {
+      "nombre": "José Daniel Layon Morito",
+      "equipo": "CD Estepona",
+      "categoria": "3ª Andaluza Cadete Grupo II",
+      "valoracion": 4,
+      "video": [
+        "https://youtu.be/MYWt92AlwxM",
+        "https://www.youtube.com/watch?v=L8jEzb29Du8",
+        "https://youtu.be/IXqVLvHs-MU",
+        "https://youtu.be/RZFe9J05mR4",
+        "https://youtu.be/AeSPCk62nmo"
+      ],
+      "posicion_campo": {
+        "x": 90,
+        "y": 70
+      },
+      "partido": {
+        "rival": "UD San Pedro",
+        "resultado": {
+          "CD_Estepona": 0,
+          "UD_San_Pedro": 2
+        }
+      },
+      "partido2": {
+        "fecha": "23 Marzo 2025",
+        "rival": "CD Ateltico Marbelli",
+        "resultado": {
+          "CD_Ateltico_Marbelli": 1,
+          "CD_Estepona": 8
         },
         "informe": {
-          "comentario": "Partido complicado para el CD Estepona, que intentó imponer su juego en los primeros minutos. Cuando mejor estaban llegó el primer gol visitante y a partir de ahí el partido cambió totalmente, dejando a un UD San Pedro dominador en todos los aspectos del juego. Un rival claramente superior.",
+          "comentario": "En un contundente partido del 23 de marzo de 2025, José Daniel desplegó un doble filo: arrancó con dinamismo y calidad ofensiva, demostrando destellos de genialidad en sus incursiones y pases letales, aunque en los últimos compases se notó una caída en intensidad y decisión.",
           "actuacion": {
-            "sistema_juego": "4-4-2",
-            "rol": "Extremo derecho",
-            "desempeno": "Entró a los 15 minutos y rápidamente se convirtió en un factor desequilibrante.",
-            "participacion": "Fue protagonista en el primer tiempo con incursiones peligrosas por banda.",
-            "liderazgo": "Debe trabajar su mentalidad competitiva."
+            "sistema_juego": "4-3-3 (variante ofensiva con cambios de banda)",
+            "rol": "Extremo ofensivo en ambas bandas, por izquierda buscando entradas por dentro a pierna cambiada y por derecha, más puro extremo de llegada a línea de fondo y buscar centros al área.",
+            "desempeno": "Desde el inicio se notó su velocidad y capacidad para desequilibrar, realizando entradas incisivas y ofreciendo pases de la muerte que generaron gol. No obstante, tras el cambio de banda, su protagonismo se vio ensombrecido por momentos de duda y falta de agresividad en la presión.",
+            "participacion": "Destacado en la primera mitad con acciones individuales determinantes, pero con una marcada pérdida de eficacia en los últimos 10 minutos.",
+            "liderazgo": "No se perfiló como líder; se percibió indecisión en situaciones clave."
           },
           "posicionamiento_tactico": {
-            "formacion": "4-4-2",
-            "rol": "Se desempeñó como extremo puro, buscando profundidad y ataque por la banda."
+            "formacion": "4-3-3 adaptado a roles cambiantes",
+            "rol": "Inició en la banda izquierda, buscando entrar por dentro con pierna cambiada, y luego se reubicó en el extremo derecho para aprovechar su pie natural y generar centros desde la línea de fondo."
           },
           "aspectos_tecnicos": {
-            "manejo_balon": "Destacó en los duelos individuales con desborde exitoso.",
-            "puntos_mejorar": "Debe mejorar su lectura táctica y actitud competitiva."
+            "manejo_balon": "Mostró un excelente control y aceleración en los primeros compases, evidenciado en varias llegadas peligrosas y en su ejecución de pases letales.",
+            "puntos_mejorar": "Debe trabajar en mantener la presión y la toma de decisiones en momentos de alta tensión, especialmente en la segunda mitad."
           },
           "duelo_recuperacion": {
-            "intervencion_cortes": "Buen repliegue defensivo en el primer tiempo.",
-            "observacion": "Debe mejorar su capacidad para aguantar embestidas rivales."
+            "intervencion_cortes": "Realizó recuperaciones clave en transición, generando ocasiones de peligro tras recuperar el balón.",
+            "observacion": "A pesar de su buena lectura en la salida de balón, se notó titubeo en duelos individuales en momentos críticos."
           },
           "desempeno_fisico": {
-            "resistencia": "Se redujo en la segunda mitad, mostrando signos de fatiga.",
-            "velocidad": "Posee una explosividad destacable, pero necesita mejorar su resistencia a la velocidad."
+            "resistencia": "Su explosividad y aceleración fueron evidentes al inicio, pero la caída de intensidad en la segunda mitad sugiere una falta de constancia, probablemente vinculada a aspectos mentales más que físicos.",
+            "velocidad": "La velocidad y su capacidad de desborde fueron fundamentales para sus incursiones por banda."
           },
           "orden_tactico": {
-            "tactico": "Debe presionar con más agresividad y mejorar su lectura táctica.",
-            "concentracion": "Se desconectó tras el primer gol en contra, perdiendo precisión."
-          }
+            "tactico": "Mostró una buena lectura táctica inicial, adaptándose al cambio de banda y de rol, aunque la falta de determinación en los últimos minutos afectó su rendimiento global.",
+            "concentracion": "Al inicio mantuvo alta concentración, pero la pérdida de intensidad y la indecisión en la fase final fueron evidentes."
+          },
+          "observaciones": "Su capacidad para conectar jugadas mediante internadas por la banda y pases precisos es un punto a favor, evidenciando un gran potencial ofensivo. No obstante, la inconsistencia en la presión y la tendencia a 'bracear' en momentos cruciales indican áreas claras de mejora en su fortaleza mental y toma de decisiones bajo presión."
+        }
+      },
+      "informe": {
+        "comentario": "Partido complicado para el CD Estepona, que intentó imponer su juego en los primeros minutos. Cuando mejor estaban llegó el primer gol visitante y a partir de ahí el partido cambió totalmente, dejando a un UD San Pedro dominador en todos los aspectos del juego. Un rival claramente superior.",
+        "actuacion": {
+          "sistema_juego": "4-4-2",
+          "rol": "Extremo derecho",
+          "desempeno": "Entró a los 15 minutos y rápidamente se convirtió en un factor desequilibrante.",
+          "participacion": "Fue protagonista en el primer tiempo con incursiones peligrosas por banda.",
+          "liderazgo": "Debe trabajar su mentalidad competitiva."
         },
-        "logotipos": {
-          "cd_estepona": "https://cdn.resfu.com/img_data/equipos/19064.png?size=120x&lossy=1",
-          "ud_san_pedro": "https://cdn.resfu.com/img_data/equipos/2239.png?size=120x&lossy=1"
+        "posicionamiento_tactico": {
+          "formacion": "4-4-2",
+          "rol": "Se desempeñó como extremo puro, buscando profundidad y ataque por la banda."
+        },
+        "aspectos_tecnicos": {
+          "manejo_balon": "Destacó en los duelos individuales con desborde exitoso.",
+          "puntos_mejorar": "Debe mejorar su lectura táctica y actitud competitiva."
+        },
+        "duelo_recuperacion": {
+          "intervencion_cortes": "Buen repliegue defensivo en el primer tiempo.",
+          "observacion": "Debe mejorar su capacidad para aguantar embestidas rivales."
+        },
+        "desempeno_fisico": {
+          "resistencia": "Se redujo en la segunda mitad, mostrando signos de fatiga.",
+          "velocidad": "Posee una explosividad destacable, pero necesita mejorar su resistencia a la velocidad."
+        },
+        "orden_tactico": {
+          "tactico": "Debe presionar con más agresividad y mejorar su lectura táctica.",
+          "concentracion": "Se desconectó tras el primer gol en contra, perdiendo precisión."
+        }
+      },
+      "logotipos": {
+        "cd_estepona": "https://cdn.resfu.com/img_data/equipos/19064.png?size=120x&lossy=1",
+        "ud_san_pedro": "https://cdn.resfu.com/img_data/equipos/2239.png?size=120x&lossy=1"
+      },
+      "partido3": {
+        "rival": "Estepona",
+        "resultado": {
+          "Marbella_FC": 3,
+          "Estepona_CD": 2
+        },
+        "informe": {
+          "comentario": "El partido entre Marbella CF y Estepona fue intenso. José Daniel Layon Morito jugó como extremo derecho, sin permutar de banda, siempre muy abierto y buscando oportunidades ofensivas. Se le vio con mayor intensidad desde el inicio, con el equipo bien plantado y controlando el encuentro durante los primeros 15 minutos. Realizó salidas rápidas; al primer toque controló, orientó y logró desequilibrar al rival. Sin embargo, abusó en ocasiones de buscar la falta en vez de continuar el juego, aspecto que debe mejorar. Defensivamente, se mantuvo en los tres cuartos del campo, demostrando un perfil muy ofensivo. En los duelos aéreos participó, pero no resultó ganador en esa faceta. Se asoció muy bien con sus compañeros, mostrando criterio y toma de decisiones acertada; sus pases cortos también fueron de muy buen nivel.",
+          "actuacion": {
+            "sistema_juego": "4-3-3",
+            "rol": "Extremo derecho",
+            "valoracion": 4,
+            "desempeno": "Mostró gran intensidad desde el inicio, destacándose en el primer tiempo con dos entradas desde banda y un chute directo a portería. Fue sustituido a los 35 minutos; al reingresar en el segundo tiempo con el marcador adverso (2-0), elevó su rendimiento a su mejor nivel visto hasta el momento, liderando jugadas de peligro mediante pases precisos y contragolpes.",
+            "participacion": "Inició el partido en el primer tiempo, fue retirado a los 35 minutos y luego volvió a incorporarse en el segundo tiempo, impactando decisivamente en el desarrollo del encuentro.",
+            "liderazgo": "Aunque aún debe potenciar su capacidad para inspirar a sus compañeros, mostró determinación y asume responsabilidad en el ataque durante sus mejores momentos."
+          },
+          "posicionamiento_tactico": {
+            "formacion": "4-3-3",
+            "rol": "Se mantuvo en la banda sin permutar, aprovechando la amplitud del campo para generar desbordes y ampliar el juego ofensivo."
+          },
+          "aspectos_tecnicos": {
+            "manejo_balon": "Destacó por su rapidez y aceleración en banda, y por una excelente toma de decisiones al primer toque, lo que le permitió desequilibrar al rival.",
+            "puntos_mejorar": "Debe evitar abusar de buscar la falta, ya que esto a menudo lo desconecta del juego. Se le recomienda ser más asertivo en la continuidad y recuperación del balón."
+          },
+          "duelo_recuperacion": {
+            "observacion": "Participó en duelos aéreos, aunque con resultados por debajo de lo deseado, por lo que esta faceta se identifica claramente como un área a mejorar. Tácticamente correcto, se le vió muy concentrado y siempre en actitud muy positiva."
+          },
+          "detalles_adicionales": {
+            "entrada_sustitucion": "Fue sustituido al minuto 35 en el primer tiempo y reingresó en el segundo cuando el marcador era 2-0 en contra.",
+            "acciones_destacadas": "En el segundo tiempo, destacó de forma espectacular: tras recibir el balón inició un contragolpe con un pase magistral que dejó solo al delantero adversario; posteriormente, realizó una internada por su banda que terminó en gol; y, en una jugada ensayada, un sutil toque dejó al delantero libre para rematar al gol."
+          }
         }
       }
-    ]
-  }
-  
+    }
+  ]
+}
