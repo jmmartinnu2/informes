@@ -8,7 +8,8 @@
       "video": [
         "https://youtu.be/4298-i9oUz0",
         "https://youtu.be/46sYpmyH0Gw",
-        "https://youtu.be/D6uTUhOmMmo"
+        "https://youtu.be/D6uTUhOmMmo",
+        "https://youtu.be/EFAMg3fL8SU"
       ],
       "posicion_campo": {
         "x": 40,
@@ -101,9 +102,46 @@
         },
         "video": "https://youtube.com/shorts/rN6Isayo0BY"
       },
-      "logotipos": {
-        "Betis": "https://cdn.resfu.com/img_data/equipos/486.png?size=120x&lossy=1",
-        "atletico_marbella_paraiso": "https://cdn.resfu.com/img_data/escudos/medium/160991.jpg?size=120x&lossy=1"
+      "partido3": {
+        "rival": "La Cañada",
+        "resultado": {
+          "Atletico_Marbella_Paraiso": 0,
+          "La_Cañada": 1
+        },
+        "informe": {
+          "comentario": "El encuentro fue flojo en líneas generales para el conjunto marbelli. Ismael fue ubicado de Defensa Central, posición que no se ajusta a su perfil, lo que se tradujo en carencias especialmente en balones a sus espaldas y anticipaciones en duelos aéreos. Durante el primer tiempo, mostró buena concentración y ganó sus duelos individuales en anticipación sobre el rival, pero tuvo dificultades en el repliegue por falta de aceleración. A los 30 minutos fue permutado a mediocentro defensivo (pivote), donde aprovechó para distribuir el balón, aunque posteriormente volvió a la posición de Defensa Central en el segundo tiempo.",
+          "actuacion": {
+            "sistema_juego": "5-3-3",
+            "rol": "Inicialmente Defensa Central, luego Mediocentro Defensivo (Pivote) y nuevamente Defensa Central",
+            "desempeno": "Mostró calidad en la salida de balón y asociación, aunque apreciamos una falta de velocidad en balones a sus espaldas.",
+            "participacion": "Completó el 100% del partido, adaptándose a los cambios de posición.",
+            "liderazgo": "No destacó en liderazgo, pero mantuvo compromiso táctico durante el encuentro."
+          },
+          "posicionamiento_tactico": {
+            "rol": "Defensa Central con transición a mediocentro defensivo en el primer tiempo",
+            "observacion": "El cambio posicional evidenció la necesidad del equipo, resaltando que la posición de Defensa Central no es la más adecuada para Ismael debido a su menor capacidad en duelos aéreos y una falta de aceleración prolongada en velocidad a balones largos."
+          },
+          "aspectos_tecnicos": {
+            "manejo_balon": "Mostró habitual seguridad y calidad en la salida de balón, asociándose con sus compañeros.",
+            "puntos_mejorar": "Debe trabajar en la rapidez y efectividad en los duelos aéreos y en el repliegue por falta de aceleración."
+          },
+          "duelo_recuperacion": {
+            "intervencion_cortes": "Inició el partido con intervenciones efectivas en anticipación.",
+            "observacion": "Siempre bien posicionado cuando está de pivote, se le ve más cómodo en el campo y el equipo lo nota."
+          },
+          "desempeno_fisico": {
+            "resistencia": "Mantuvo un despliegue físico adecuado.",
+            "velocidad": "Es rápido en espacios cortos, pero cuando ocupa la posición de Defensa Central sufre en balones a sus espaldas por falta de velocidad."
+          },
+          "orden_tactico": {
+            "tactico": "Mostró solidez en la salida de balón y se adaptó al cambio de posiciones.",
+            "concentracion": "Se mantuvo concentrado en general, aunque su ritmo descendió en situaciones de presión y anticipación cuando ocupa la posición de Defensa."
+          },
+          "logotipos": {
+            "la_canada": "URL_del_logo_de_La_Cañada",
+            "atletico_marbella_paraiso": "https://cdn.resfu.com/img_data/escudos/medium/160991.jpg?size=120x&lossy=1"
+          }
+        }
       }
     },
     {
@@ -146,26 +184,25 @@
             "liderazgo": "No se perfiló como líder; se percibió indecisión en situaciones clave."
           },
           "posicionamiento_tactico": {
-            "formacion": "4-3-3 adaptado a roles cambiantes",
-            "rol": "Inició en la banda izquierda, buscando entrar por dentro con pierna cambiada, y luego se reubicó en el extremo derecho para aprovechar su pie natural y generar centros desde la línea de fondo."
+            "formacion": "4-4-2",
+            "rol": "Se desempeñó como extremo puro, buscando profundidad y ataque por la banda."
           },
           "aspectos_tecnicos": {
-            "manejo_balon": "Mostró un excelente control y aceleración en los primeros compases, evidenciado en varias llegadas peligrosas y en su ejecución de pases letales.",
-            "puntos_mejorar": "Debe trabajar en mantener la presión y la toma de decisiones en momentos de alta tensión, especialmente en la segunda mitad."
+            "manejo_balon": "Destacó en los duelos individuales con desborde exitoso.",
+            "puntos_mejorar": "Debe mejorar su lectura táctica y actitud competitiva."
           },
           "duelo_recuperacion": {
-            "intervencion_cortes": "Realizó recuperaciones clave en transición, generando ocasiones de peligro tras recuperar el balón.",
-            "observacion": "A pesar de su buena lectura en la salida de balón, se notó titubeo en duelos individuales en momentos críticos."
+            "intervencion_cortes": "Buen repliegue defensivo en el primer tiempo.",
+            "observacion": "Debe mejorar su capacidad para aguantar embestidas rivales."
           },
           "desempeno_fisico": {
-            "resistencia": "Su explosividad y aceleración fueron evidentes al inicio, pero la caída de intensidad en la segunda mitad sugiere una falta de constancia, probablemente vinculada a aspectos mentales más que físicos.",
-            "velocidad": "La velocidad y su capacidad de desborde fueron fundamentales para sus incursiones por banda."
+            "resistencia": "Se redujo en la segunda mitad, mostrando signos de fatiga.",
+            "velocidad": "Posee una explosividad destacable, pero necesita mejorar su resistencia a la velocidad."
           },
           "orden_tactico": {
-            "tactico": "Mostró una buena lectura táctica inicial, adaptándose al cambio de banda y de rol, aunque la falta de determinación en los últimos minutos afectó su rendimiento global.",
-            "concentracion": "Al inicio mantuvo alta concentración, pero la pérdida de intensidad y la indecisión en la fase final fueron evidentes."
-          },
-          "observaciones": "Su capacidad para conectar jugadas mediante internadas por la banda y pases precisos es un punto a favor, evidenciando un gran potencial ofensivo. No obstante, la inconsistencia en la presión y la tendencia a 'bracear' en momentos cruciales indican áreas claras de mejora en su fortaleza mental y toma de decisiones bajo presión."
+            "tactico": "Debe presionar con más agresividad y mejorar su lectura táctica.",
+            "concentracion": "Se desconectó tras el primer gol en contra, perdiendo precisión."
+          }
         }
       },
       "informe": {
