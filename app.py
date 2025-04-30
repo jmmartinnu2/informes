@@ -31,38 +31,36 @@ jugador = next(j for j in data["informe_jugadores"] if j["nombre"] == jugador_se
 pos_x, pos_y = jugador["posicion_campo"]["x"], jugador["posicion_campo"]["y"]
 
 # Definir los tabs según el jugador y la existencia de partidos adicionales
+
+
+# Definir los tabs según el jugador y la existencia de partidos adicionales
+# Construir etiquetas de tabs para Ismael Ruesca Godino
 if jugador["nombre"] == "Ismael Ruesca Godino":
-    if jugador.get("partido3"):
-        tabs = st.tabs([
-            "📊 Granada CF vs Atl. Marbella Paraíso",
-            "📝 Atl. Marbella Paraíso vs Real Betis",
-            "⚽ La Cañada vs Atl. Marbella Paraíso",
-            "🎥 Videos"
-        ])
-        tab_informe, tab_detallado, tab_partido3, tab_videos = tabs
-    elif jugador.get("partido2"):
-        tabs = st.tabs([
-            "📊 Granada CF vs Atl. Marbella Paraíso",
-            "📝 Atl. Marbella Paraíso vs Real Betis",
-            "🎥 Videos"
-        ])
-        tab_informe, tab_detallado, tab_videos = tabs
-    else:
-        tabs = st.tabs(["📊 Partido1", "📝 Partido2", "🎥 Videos"])
-        tab_informe, tab_detallado, tab_videos = tabs
+    tabs_labels = ["📊 Granada CF vs Atl. Marbella Paraíso"]
+    if jugador.get("partido2"): tabs_labels.append("📝 Atl. Marbella Paraíso vs Real Betis")
+    if jugador.get("partido3"): tabs_labels.append("⚽ La Cañada vs Atl. Marbella Paraíso")
+    if jugador.get("partido4"): tabs_labels.append("⚽ CD Tiropichón vs Marbella Atl. Paraíso")
+    tabs_labels.append("🎥 Videos")
+    tabs = st.tabs(tabs_labels)
+    tab_informe = tabs[0]
+    idx = 1
+    tab_detallado = tabs[idx] if jugador.get("partido2") else None
+    if jugador.get("partido2"): idx += 1
+    tab_partido3 = tabs[idx] if jugador.get("partido3") else None
+    if jugador.get("partido3"): idx += 1
+    tab_partido4 = tabs[idx] if jugador.get("partido4") else None
+    tab_videos = tabs[-1]
 else:
-    if jugador.get("partido2") and jugador.get("partido3"):
-        tabs = st.tabs(["📊 Informe", "⚽ Partido 2", "⚽ Partido 3", "🎥 Videos"])
-        tab_informe, tab_partido2, tab_partido3, tab_videos = tabs
-    elif jugador.get("partido2"):
-        tabs = st.tabs(["📊 Informe", "⚽ Partido 2", "🎥 Videos"])
-        tab_informe, tab_partido2, tab_videos = tabs
-    elif jugador.get("partido3"):
-        tabs = st.tabs(["📊 Informe", "⚽ Partido 3", "🎥 Videos"])
-        tab_informe, tab_partido3, tab_videos = tabs
-    else:
-        tabs = st.tabs(["📊 Informe", "🎥 Videos"])
-        tab_informe, tab_videos = tabs
+    # Otros jugadores
+    tabs_labels = ["📊 Informe"]
+    if jugador.get("partido2"): tabs_labels.append("⚽ Partido 2")
+    if jugador.get("partido3"): tabs_labels.append("⚽ Partido 3")
+    tabs_labels.append("🎥 Videos")
+    tabs = st.tabs(tabs_labels)
+    tab_informe = tabs[0]
+    tab_partido2 = tabs[1] if jugador.get("partido2") else None
+    tab_partido3 = tabs[2] if jugador.get("partido3") else None
+    tab_videos = tabs[-1]
 
 # ------------------------------
 # TAB: Informe del Jugador + Posición en el Campo
@@ -373,6 +371,51 @@ if jugador.get("partido3") and jugador["nombre"] != "Ismael Ruesca Godino":
             pitch3.draw(ax=ax3)
             pos_extremo_derecho = (85, 70)
             ax3.scatter(*pos_extremo_derecho, color="blue", s=200, label="Extremo Derecho")
+            ax3.legend(loc="upper left", fontsize="small")
+            st.pyplot(fig3)
+
+# ------------------------------
+# TAB: Informe Detallado para Ismael (Partido4)
+# ------------------------------
+if jugador.get('partido4'):
+    with tab_partido4:
+        p4 = jugador['partido4']
+        st.title(f"⚽ Informe - {p4['rival']}")
+        st.markdown("**Resultado:** " + " - ".join([f"{k.replace('_',' ')} {v}" for k,v in p4['resultado'].items()]))
+        st.markdown(f"📝 **Comentario:** {p4['informe']['comentario']}")
+        st.markdown("### 📌 Análisis del Rendimiento")
+        col1,col2 = st.columns([2,1])
+        with col1:
+            inf4 = p4['informe']
+            st.markdown(f"📝 **Comentario:** {inf4.get('comentario','No especificado')}")
+            with st.expander("🎯 Actuación en el Partido"):
+                for k,v in inf4['actuacion'].items(): st.markdown(f"- **{k}:** {v}")
+            with st.expander("🎯 Posicionamiento Táctico"):
+                pt4 = inf4['posicionamiento_tactico']
+                st.markdown(f"- **Formación:** {pt4.get('formacion')}")
+                st.markdown(f"- **Rol:** {pt4.get('rol')}")
+            with st.expander("🎯 Aspectos Técnicos"):
+                at4 = inf4['aspectos_tecnicos']
+                st.markdown(f"- **Manejo de balón:** {at4.get('manejo_balon')}")
+                st.markdown(f"- **Puntos a mejorar:** {at4.get('puntos_mejorar')}")
+            with st.expander("🎯 Duelos y Recuperación"):
+                dr4 = inf4['duelo_recuperacion']
+                st.markdown(f"- **Intervención y cortes:** {dr4.get('intervencion_cortes')}")
+                st.markdown(f"- **Observación:** {dr4.get('observacion')}")
+            with st.expander("🎯 Rendimiento Físico"):
+                rf4 = inf4['desempeno_fisico']
+                st.markdown(f"- **Resistencia:** {rf4.get('resistencia')}")
+                st.markdown(f"- **Velocidad:** {rf4.get('velocidad')}")
+            with st.expander("🎯 Orden Táctico"):
+                od4 = inf4['orden_tactico']
+                st.markdown(f"- **Táctico:** {od4.get('tactico')}")
+                st.markdown(f"- **Concentración:** {od4.get('concentracion')}")
+        with col2:
+            st.markdown("### ⚽ Posición en el Campo - Partido 3")
+            fig3, ax3 = plt.subplots(figsize=(6, 4))
+            pitch3 = Pitch(pitch_type="statsbomb", pitch_color="grass", line_color="white")
+            pitch3.draw(ax=ax3)
+            ax3.scatter(20, 40, color="black", s=300, label="Defensa Central")
             ax3.legend(loc="upper left", fontsize="small")
             st.pyplot(fig3)
 

@@ -142,6 +142,44 @@
             "atletico_marbella_paraiso": "https://cdn.resfu.com/img_data/escudos/medium/160991.jpg?size=120x&lossy=1"
           }
         }
+      },
+      "partido4": {
+        "fecha": "25 Abril 2025",
+        "rival": "CD Tiropichón",
+        "resultado": {
+          "CD_Tiropichón": 2,
+          "Marbella_Atl_Paraíso": 2
+        },
+        "informe": {
+          "comentario": "En un empate muy trabajado el 25 de abril de 2025, el central mostró una gran solidez defensiva en el primer tramo y calidad técnica para distribuir balón, aunque en el segundo tiempo perdió algo de fuerza fruto del trabajo incansable realizado durante todo el encuentro.",
+          "actuacion": {
+            "sistema_juego": "5-4-1",
+            "rol": "Defensa central todo el partido",
+            "desempeno": "Es técnicamente muy bueno: siempre entrega pases precisos antes de recibir el balón y anticipa casi todas las acciones rivales en el tramo inicial (0–20ʹ). En el segundo tiempo, sin embargo, se notó una ligera pérdida de fuerza que achacamos al trabajo fisico desplegado durante todo el encuentro.",
+            "participacion": "Destacado entre el minuto 0 y el 20, bien posicionado en bloque bajo; entre el 35 del segundo tiempo bajó su incidencia en cortes y balones largos.",
+            "liderazgo": "Debe hablar y transmitir más a sus compañeros; no ejerció como timón defensivo pese a la necesidad de ordenar al equipo."
+          },
+          "posicionamiento_tactico": {
+            "formacion": "5-4-1",
+            "rol": "Último hombre en la defensa, asegurando línea de cinco defensas (2 laterales carrileros) por dentro y salidas al mediocentro para iniciar jugadas."
+          },
+          "aspectos_tecnicos": {
+            "manejo_balon": "Excelente visión y timing en el pase, aunque no apreciamos cambios de orientación o desplazamientos en largo.",
+            "puntos_mejorar": "Debe mejorar su velocidad de reacción y la velocidad continuada sobre todo jugando como defensa central. Sufre en balones a las espaldas."
+          },
+          "duelo_recuperacion": {
+            "intervencion_cortes": "Apreciamos Mmy buen sentido de anticipación en los primeros 20 minutos.",
+            "observacion": "Falta algo de fuerza física para imponerse en duelos cuerpo a cuerpo."
+          },
+          "desempeno_fisico": {
+            "resistencia": "Mantiene intensidad en el primer tiempo, pero acusa fatiga tras el minuto 35 del segundo.",
+            "velocidad": "Es un aspecto a mejorar. Bien en velocidad con balón pero creemos que puede mejorar mucho tanto velocidad de reacción como de velocidad continuada."
+          },
+          "orden_tactico": {
+            "tactico": "Tácticamente impecable en bloque bajo, pero necesita mayor agresividad y comunicación para presionar en bloque alto.",
+            "concentracion": "Se desconectó tras el 2-2 (min. 35 del segundo tiempo), lo que permitió circulaciones rivales con ventaja numérica."
+          }
+        }
       }
     },
     {
@@ -200,8 +238,7 @@
             "velocidad": "Posee una explosividad destacable, pero necesita mejorar su resistencia a la velocidad."
           },
           "orden_tactico": {
-            "tactico": "Debe presionar con más agresividad y mejorar su lectura táctica.",
-            "concentracion": "Se desconectó tras el primer gol en contra, perdiendo precisión."
+            "tactico": "Debe presionar con más agresividad y mejorar su lectura táct..."  
           }
         }
       },
@@ -231,8 +268,7 @@
           "velocidad": "Posee una explosividad destacable, pero necesita mejorar su resistencia a la velocidad."
         },
         "orden_tactico": {
-          "tactico": "Debe presionar con más agresividad y mejorar su lectura táctica.",
-          "concentracion": "Se desconectó tras el primer gol en contra, perdiendo precisión."
+          "tactico": "Debe presionar con más agresividad y mejorar su lectura táct..."  
         }
       },
       "logotipos": {
